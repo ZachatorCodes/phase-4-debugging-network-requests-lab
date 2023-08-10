@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: Saw a status code 500 (Internal Server Error) which means check the server logs. There was a typo: Toy was spelled as toys
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: Saw that there was a status code of 204 (No Content) so checked to see if response was rendering JSON. It was, so I checked controller and there was no JSON render, so I added it.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: Saw in the server response that no routes matched so made sure the route existed.
